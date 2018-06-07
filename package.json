@@ -1,0 +1,29 @@
+{
+  "name": "mystore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wl327380808/mystore.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wl327380808/mystore/issues"
+  },
+  "homepage": "https://github.com/wl327380808/mystore#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.5.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.3",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.0"
+  }
+}
