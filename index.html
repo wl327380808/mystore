@@ -5,11 +5,14 @@
 	<title>myweb</title>
 	<link rel="stylesheet" type="text/css" href="css/iconfont.css">
 	<link rel="stylesheet" href="css/index.css">
+
 </head>
 <body>
+	<!-- fixed -->
+<div id="fixedBox"></div>
 <!-- header -->
 <div class="header" id="header">
-	<div id="header_bg">
+	<div class="header_bg">
 		<a href="#"><img src="../img/1.jpg" alt=""></a>
 	</div>
 	<div class="header_nav" id="header_nav">
@@ -18,105 +21,379 @@
 			 <h4 class="hi">hi,欢迎来到我买网</h4>
 			<a class="login" href="#">登录</a>
 			<a href="#">注册</a>
-		<div class="header_bgAll">
-			<a href="#">我的账户</a> 
+		
+			<a class="mycount" href="#">我的账户</a> 
 			<span class="header_bg1"></span>
-			<a href="#">购物车0件</a><span>|</span>
-			<a href="#">客户服务</a><span class="header_bg1"></span><span>|</span>
-			<a href="#">企业购</a><span>|</span>
-			<span class="header_bg3"></span>
+			<span class="header_shoping"></span>
+			<a href="#">购物车0件</a><span class="header_line">|</span>
+			<a href="#">客户服务</a><span class="header_bg1"></span><span class="header_line">|</span>
+			<a href="#">企业购</a><span class="header_line">|</span>
 			<span class="header_bg2"></span>
+			<span class="header_bg3"></span>
 
-			</div>
+			
 	</div>
 </div>
 <!-- nec -->
 <div class="nec">
-	<div  class="nec_bg"></div>
-	<div  class="nec_nav"></div>
+	<div  class="nec_bg">
+		<img src="../img/2.png" alt="">
+		<img src="../img/2.jpg" alt="">
+		
+		<div class="nec_serch">
+			<div class="bigmirr"></div>
+			<input class="nec_serch_tex" type="text">
+			
+			<p class="nec_serch_gaoji"><a href="#">高级搜索</a></p><a class="nec_serch_sousuo" href="#">搜索</a>
+		
+				
+			<div class="nec_serch_bottom">
+				<a href="#">小龙虾</a>
+				<a href="#">牛奶</a>
+				<a href="#">啤酒</a>
+				<a href="#">每日坚果</a>
+				<a href="#">虾</a>
+				<a href="#">冰淇淋</a>
+			</div>
+		</div>
+		<img class="nec_bg3" src="../img/3.jpg" alt="">
+	</div>
+	<div  class="nec_nav">
+		<p class="nec_nav_allgoods">全部商品分类</p>
+		<div class="nec_nav_left">
+			<a href="#">团购</a>
+			<a href="#">每日鲜</a>
+			<a href="#">我买酒</a>
+			<a href="#">我买严选</a>
+			<a href="#">安心享</a>
+			<a href="#">包邮团购</a>
+			<a href="#">全球购</a>
+			<a href="#">三通专区</a>
+		</div>
+		<div class="nec_nav_right">
+			<div class="nec_nav_gouwuche">
+				<i class="iconfont goodscar icon-gouwuche"></i>
+				<i class="iconfont masage icon-xinxihuihuaxiaoxi"></i>
+				<span class="nec_span_gouwuche">0</span>
+			</div>
+			<p class="nec_nav_pgods"><a href="#">购物车</a></p>
+			<i class="iconfont nec_nav_right_jiantou icon-jiantou"></i>			
+		</div>
+
+	</div>
 </div>		
 <!-- picpas -->
-<div>
-	<div id="picBo" class="picBo"></div>
-	<div class="contLeft"></div>
-	<div class="contRight"></div>
+<div class="picpasbox">
+	<div class="contLeft">
+		<ol>
+		<li><img src="../img/left-1.png"><a href="#">肉禽水产</a><a href="#">水果蔬菜</a></li>
+		<li><img src="../img/left-2.png"><a href="#">进口生鲜</a><a href="#">进口水果</a></li>
+		<li><img src="../img/left-3.png"><a href="#">进口食品</a><a href="#">进口直采</a></li>
+		<li><img src="../img/left-4.png">
+			<a href="#">酒</a>
+			<a href="#">饮料/冲调</a>
+			<a href="#">茶</a>
+		</li>
+		<li><img src="../img/left-5.png"><a href="#">休闲食品</a><a href="#">地方特产</a></li>
+		<li><img src="../img/left-6.png"><a href="#">营养健康</a><a href="#">奶制品</a></li>
+		<li><img src="../img/left-7.png"><a href="#">粮油副食</a><a href="#">调味干活</a></li>
+		<li><img src="../img/left-8.png"><a href="#">母婴食品</a><a href="#">母婴用品</a></li>
+		<li><img src="../img/left-10.png"><a href="#">个护美妆</a><a href="#">家用清洁</a></li>
+		<li><img src="../img/left-11.png"><a href="#">厨具家纺</a><a href="#">家电3C</a></li>
+		<li><img src="../img/left-12.png"><a href="#">礼品卡卷</a></li>
+		</ol>	
+	</div>
+	<div id="picBo" class="picBo">
+		<img id="imgId" src="../img/4.jpg" alt="">
+			<ul id="btns">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>		
+	</div>
+	
+	<div class="contRight">
+		<div id="contRight_xuanxiang">
+			<div id="contRight_xuanxiang_head">
+				<ul>
+					<li><a href="#">服务公告</a></li>
+					<li><a href="#">卡卷专栏</a></li>
+					<li><a href="#">vip通道</a></li>
+				</ul>
+			</div>
+			<div id="contRight_xuanxiang_body">
+				<ul id="contRight_xuanxiang_body_one">
+					<li><a href="#">山东青岛地区因上和风...</a></li>
+					<li><a href="#">银联云闪付62折活动说明</a></li>
+					<li><a href="#">翼支付5折立减活动</a></li>
+				</ul>
+				<ul id="contRight_xuanxiang_body_two">
+					<li><a href="#">钱库优惠券使用小提示</a></li>
+					<li><a href="#">优惠券使用说明</a></li>		
+				</ul>
+				<ul id="contRight_xuanxiang_body_three">
+					<li><a href="#">2016年4月VIP会员专享...</a></li>
+					<li><a href="#">2016年3月VIP 会员专享...</a></li>
+					<li><a href="#">a2016年2月VIP会员专享...</a></li>
+				</ul>				
+			</div>
+		</div>
+		<div id="contRight_table">
+			<table>
+				<tr>
+					<td><a href="#"><img src="../img/bg-li1.png" alt=""></a></td>
+					<td><a href="#"><img src="../img/bg-li2.png" alt=""></a></td>
+					<td><a href="#"><img src="../img/bg-li3.png" alt=""></a></td>
+				</tr>
+				<tr>
+					<td><a href="#"><img src="../img/bg-li4.png" alt=""></a></td>
+					<td><a href="#"><img src="../img/bg-li5.png" alt=""></a></td>
+					<td><a href="#"><img src="../img/bg-li6.png" alt=""></a></td>
+				</tr>
+				<tr>
+					<td><a href="#"><img src="../img/bg-li7.png" alt=""></a></td>
+					<td><a href="#"><img src="../img/bg-li8.png" alt=""></a></td>
+					<td><a href="#"><img src="../img/bg-li9.png" alt=""></a></td>
+				</tr>
+			</table>
+		</div>
+		<div>
+			<a href="#"><img src="../img/13.jpg" alt=""></a>
+		</div>
+	</div>
 </div>
  <!-- goods1 -->
  <div class="goodsBoxOne">
- 	<div class="fontOne"></div>
- 	<div class="goodsOne"></div>
+ 	<div class="fontOne">
+ 		<h2>每日劲爆品</h2>
+ 		<img src="../img/14.jpg" alt="">
+ 	</div>
+ 	<div class="goodsOne">
+ 		<a href="#"><img style="float: left;width: 242px;height: 320px" src="../img/15.jpg"></a>
+ 		<ul>
+ 			<li>
+ 				<div id="goodsOne_picBox"><a href="#"><img src="../img/16.jpg" ></div></a>
+ 				<div id="goodsOne_cont"><a class="guoren" href="#">时怡中粮优选什锦果仁(罐装</a> 
+ 					<span class="ziranyuanxiang">1020g自然原香，老少皆宜</span>
+ 					<p><span>￥119</span><a href="#">去看看</a></p>
+ 				</div>
+ 			</li>
+ 			<li><div id="goodsOne_picBox"><a href="#"><img src="../img/17.jpg" ></a></div>
+ 				<div id="goodsOne_cont"><a class="guoren" href="#">厄瓜多尔白虾 50/60（原装</a> 
+ 					<span class="ziranyuanxiang">1.75kg|壳薄体肥，急冻锁鲜</span>
+ 					<p><span>￥85</span><a href="#">去看看</a></p>
+ 				</div></li>
+ 			<li><div id="goodsOne_picBox"><a href="#"><img src="../img/18.jpg" ></a></div>
+ 				<div id="goodsOne_cont"><a class="guoren" href="#">【中粮海外直采】Arla爱氏</a> 
+ 					<span class="ziranyuanxiang">200ml*24|保留原奶中重要营养</span>
+ 					<p><span>￥59</span><a href="#">去看看</a></p>
+ 				</div></li>
+ 			<li><div id="goodsOne_picBox"><a href="#"><img src="../img/19.jpg" ></a></div>
+ 				<div id="goodsOne_cont"><a class="guoren" href="#">豪佳登(又名福佳白）啤酒</a> 
+ 					<span class="ziranyuanxiang">330ml*24|喝经典白啤，共迎世</span>
+ 					<p><span>￥155</span><a href="#">去看看</a></p>
+ 				</div></li>
+ 		</ul>
+ 	</div>
  </div>
 <!-- goods2 -->
  <div class="goodsBoxTwo">
- 	<div class="fontTwo"></div>
- 	<div class="goodsTwo"></div>
+ 	 <div class="fontOne">
+ 		<h2>我买特色</h2>
+ 		<img src="../img/20.jpg" alt="">
+ 	</div>
+ 	<div class="goodsTwo">
+ 		<a href="#"><img src="../img/21.jpg" alt=""></a>
+ 		<a href="#"><img src="../img/22.jpg" alt=""></a>
+ 		<a href="#"><img src="../img/23.jpg" alt=""></a>
+ 		<a href="#"><img src="../img/24.jpg" alt=""></a>
+ 		<a href="#"><img src="../img/25.jpg" alt=""></a>
+ 		<a href="#"><img src="../img/26.jpg" alt=""></a>
+ 		<a href="#"><img src="../img/27.jpg" alt=""></a>
+ 	</div>
  </div>
 <!-- goods3 -->
  <div class="goodsBoxThr">
- 	<div class="fontThr"></div>
- 	<div class="goodsThr1"></div>
- 	<div class="goodsThr2"></div>
+ 		<div class="fontOne">
+ 		<h2>我买推荐</h2> 
+ 		<img src="../img/29.jpg" alt="">
+ 	</div>
+ 	<div class="goodsThr1">
+ 		<a href="#"><img src="../img/28.jpg" alt=""></a>
+ 		<a href="#"><img src="../img/30.jpg" alt=""></a>
+ 		<a href="#"><img src="../img/31.jpg" alt=""></a>
+ 		<a href="#"><img src="../img/32.jpg" alt=""></a>
+ 	</div>
+ 	<div class="goodsThr2">
+ 		<a href="#"><img src="../img/35.jpg" alt=""></a>
+ 		<a href="#"><img src="../img/36.jpg" alt=""></a>
+ 		<a href="#"><img src="../img/37.jpg" alt=""></a>
+ 		
+ 	</div>
  </div>
 <!--forginFoods -->
 <div class="forginFoods">
-	<div class="forginFoods_nav"></div>
-	<div class="forginFoods_left"></div>
-	<div class="forginFoods_right"></div>
+	<div class="forginFoods_nav">
+		<i></i>
+		<h2>进口食品</h2><h3>精选推荐</h3><h3>热卖推荐</h3>
+	</div>
+	<div class="forginFoods_left">
+		<div class="forginFoods_left_nav">
+			<div class="forginFoods_left_nav_bg"><p>1F</p></div>
+			<ul>
+				<li><img src="../img/left-13.png" alt=""><a href="#">进口食品</a>
+					<img src="../img/left-14.png" alt=""><a href="#">牛奶乳品</a>
+				</li>
+				<li><img src="../img/left-15.png" alt=""><a href="#">坚果果干</a>
+					<img src="../img/left-16.png" alt=""><a href="#">饮料及水</a>
+				</li>
+				<li><img src="../img/left-17.png" alt=""><a href="#">饼干糕点</a>
+					<img src="../img/left-18.png" alt=""><a href="#">进口餐厨</a>
+				</li>
+			</ul>
+			<img class="forginFoods_left_nav_ulbt" src="../img/ul-bt.png" alt="">
+		</div>
+		<a href="#"><img src="../img/38.jpg" alt=""></a>
+	</div>
+	<div class="forginFoods_right">
+		
+	</div>
 </div>
 
  <!-- newfoods -->
-<div class="forginFoods">
+<!-- <div class="forginFoods">
 	<div class="forginFoods_nav"></div>
 	<div class="forginFoods_left"></div>
 	<div class="forginFoods_right"></div>
 </div>
-
+ -->
  <!-- fruitFood -->
-<div class="forginFoods">
+<!-- <div class="forginFoods">
 	<div class="forginFoods_nav"></div>
 	<div class="forginFoods_left"></div>
 	<div class="forginFoods_right"></div>
-</div>
+</div> -->
  <!-- milkFood -->
-<div class="forginFoods">
+<!-- <div class="forginFoods">
 	<div class="forginFoods_nav"></div>
 	<div class="forginFoods_left"></div>
 	<div class="forginFoods_right"></div>
-</div>
+</div> -->
 <!-- healthFood -->
-<div class="forginFoods">
+<!-- <div class="forginFoods">
 	<div class="forginFoods_nav"></div>
 	<div class="forginFoods_left"></div>
 	<div class="forginFoods_right"></div>
-</div>
+</div> -->
 <!-- teaFood -->
-<div class="forginFoods">
+<!-- <div class="forginFoods">
 	<div class="forginFoods_nav"></div>
 	<div class="forginFoods_left"></div>
 	<div class="forginFoods_right"></div>
-</div>
+</div> -->
 <!-- liangyouFood -->
-<div class="forginFoods">
+<!-- <div class="forginFoods">
 	<div class="forginFoods_nav"></div>
 	<div class="forginFoods_left"></div>
 	<div class="forginFoods_right"></div>
-</div>
+</div> -->
 <!-- muyingwanju -->
-<div class="forginFoods">
+<!-- <div class="forginFoods">
 	<div class="forginFoods_nav"></div>
 	<div class="forginFoods_left"></div>
 	<div class="forginFoods_right"></div>
-</div>
+</div> -->
 <!-- worldGoods -->
-<div>
+<!-- <div>
 	<div class="worldGoods_nav"></div>
 	<div class="worldGoods_left"></div>
 	<div></div>
 	<div></div>
 </div>
-
+ -->
 
 
 
 </body>
 </html>
+
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript">
+	let imgs=["../img/4.jpg","../img/5.jpg","../img/6.jpg","../img/7.jpg","../img/8.jpg","../img/9.jpg","../img/10.jpg","../img/11.jpg","../img/12.jpg",  ]
+	let hrefs =["http://www.baidu.com","http://www.baidu.com","http://www.baidu.com","http://www.baidu.com","http://www.baidu.com","http://www.baidu.com","http://www.baidu.com","http://www.baidu.com","http://www.baidu.com","http://www.baidu.com"]	
+
+
+
+	function $(id){
+	return document.getElementById(id);
+}
+
+let ord = 0;//表示下标
+let myTimer =null; 
+
+//初始化界面的函数
+function initUI(){
+	$("btns").children[0].style.backgroundColor = "#3ea600";
+}
+
+//动态改变图片
+function changeImg(){
+	myTimer = setInterval(function(){
+		//一、数据处理
+		//1、改变图片序号
+		ord=ord+1;
+		//2、改变外观（显示对应的图片）
+		showImg(ord);
+	},2000);
+}
+
+//显示指定的图片（根据指定的图片序号）
+function showImg(transOrd){	
+	//一、数据处理
+	//1、数据改变
+	ord=transOrd;
+	//2、边界（数据合法性）
+	if(ord>imgs.length-1 || ord<0){
+		ord=0;
+	}
+	//二、外观
+	$("imgId").src="img/"+imgs[ord];
+	//把所有豆豆都变成原始颜色。
+	for(let i=0;i<imgs.length;i++){
+		$("btns").children[i].style.backgroundColor = "white";
+	}
+	//把当前豆豆变成高亮颜色。
+	$("btns").children[ord].style.backgroundColor = "#3ea600";
+}
+
+window.onload = function(){	
+	initUI();
+	$("imgId").onclick = function(){
+		window.location.href = hrefs[ord];
+	}
+	changeImg();
+	$("imgId").onmouseover = function(){
+		clearInterval(myTimer);
+	}
+	$("imgId").onmouseout = function(){
+		changeImg();
+	}
+	
+	let lis = $("btns").children;
+	for(let i=0;i<lis.length;i++){
+		lis[i].onmouseover = function(){
+			clearInterval(myTimer);
+			showImg(i);
+		}
+	}
+}
+
+
+</script>
+

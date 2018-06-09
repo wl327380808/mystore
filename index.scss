@@ -11,15 +11,39 @@ ul,ol{
 	list-style: none;
 }
 
-.header{
+img{
+	vertical-align: bottom;
+}
 
+#fixedBox{
+	width: 34px;
+	height: 850px;
+	background: #000000;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+}
+
+
+
+.header{
+	
 	width: 100%;
 	height: 132px;
 	background: #f5f5f5;
 }
+.header_bg img{
+	height: 100px;
+	width: 1280px;
+	vertical-align: bottom;	
+}
+
+
 
 
 .header_nav{
+	line-height: 32px;
 	font-size: 12px;
 	display: flex;
 	align-items: center;
@@ -36,7 +60,9 @@ ul,ol{
 }
 
 .header_nav .header_bg1{
-
+	display: block;
+	width: 8px;
+	height: 10px;
 	background: url(../../img/bg1.png)no-repeat -89px 5px;
 }
 
@@ -57,18 +83,550 @@ ul,ol{
 	display: block;
 	width: 50px;
 	height: 20px;
-	background: url(../../img/bg1.png)no-repeat 7px 4px;
+	background: url(../../img/bg1.png)no-repeat 3px 4px;
 }
 .header_nav .header_bg3{
 	float: right;
 	display: block;
 	width: 50px;
 	height: 20px;
-	background: url(../../img/bg2.png)no-repeat -88px -78px;
+	background: url(../../img/bg2.png)no-repeat -86px -78px;
 	
 }
-.header_nav .header_bgAll{
-	margin-left: 600px;
+.header_nav .mycount{
+	margin-left: 425px;
 }
+
+.header_nav .header_line{
+	margin-right: 23px;
+	margin-left: 12px;
+}
+.header_nav .header_shoping{
+	margin-left: 20px;
+	width: 15px;
+	height: 15px;
+	background: url(../../img/bg1.png)no-repeat -77px 2px;
+	float: left;
+}
+/*nec*/
+.nec{
+	width: 100%;
+	height: 158px;
+	border-bottom: 2px solid #318700;
+	padding-top: 40px;
+	position: relative;
+	
+}
+
+
+
+
+.nec img{
+	float: left;
+}
+
+.nec .nec_serch{
+	float: left;
+	margin-left: 46px;
+	margin-top: 8px;
+	
+
+}
+
+.nec_serch .bigmirr{
+	width: 32px;
+	float: left;
+	height: 38px;
+	border: 2px solid #c30000;
+	border-right: transparent;
+	background: url(../../img/bg1.png)no-repeat -60px -15px;
+}
+
+.nec_serch .nec_serch_tex{
+	width: 450px;
+	height: 38px;
+	border-style: none;
+	border-top: 2px solid #c30000;
+	border-bottom: 2px solid #c30000;
+}
+
+.nec_serch .nec_serch_sousuo{
+	display: block;
+	width: 100px;
+	height: 42px;
+	float: right;
+	background:#c30000; 
+	color: #ffffff;
+	line-height: 42px;
+	text-align: center;
+}
+
+ .nec_serch_bottom{
+	    margin-top: 10px;
+    margin-left: -17px;
+    font-size: 12px;
+}
+.nec_serch_bottom a{
+	color: #757575;
+	padding-left: 17px;
+}
+
+.nec_serch .nec_serch_gaoji{
+	width: 32px;
+	height: 42px;
+	font-size: 16px;
+	color: #606060;
+	margin-left: 10px;
+	float: right;
+}
+
+.nec_serch .nec_serch_gaoji a{
+	color: #606060;
+}
+
+.nec .nec_bg{
+	height: 80px;
+}
+.nec .nec_bg3{
+	margin-left: 45px;
+}
+
+.nec .nec_nav{
+	padding-top: 10px;
+	width: 100%;
+	height: 48px;
+	padding-top: 32px;
+}
+
+
+.nec .nec_nav_left{
+	font-size: 16px;
+}
+
+.nec_nav_left {
+ float: left;
+ line-height: 46px;
+}
+.nec_nav .nec_nav_allgoods{
+	float: left;
+	width: 210px;
+	height: 46px;
+	margin-left: 26px;
+	background: #2d8800;
+	text-align: center;
+	line-height: 46px;
+	color: #ffffff;
+} 
+.nec_nav_right{
+	float: right;
+	width: 200px;
+	height: 48px;
+	line-height: 46px;
+
+}
+
+.nec_nav_left a{
+	padding-left: 20px;
+	color: #383838;
+
+}
+
+.nec_nav_right .nec_nav_gouwuche{
+	float: left;
+
+}
+.nec_nav_right .nec_nav_right_jiantou{
+		position: absolute;
+		right: 54px;
+        top: 153px;
+	   	color: #cccccc;
+
+}
+
+.nec_nav_gouwuche .goodscar{
+	color: #3ea600;
+	font-size: 28px;
+}
+
+.nec_nav_gouwuche .masage{
+	color: #3ea600;
+	font-size: 28px;
+	position: absolute;
+      right: 163px;
+    top: 130px;
+}
+.nec_nav_right .nec_span_gouwuche{
+	position: absolute;
+	right: 173px;
+    top: 129px;
+}
+
+.nec_nav_right .nec_nav_pgods{
+	font-size: 14px;
+	margin-left: 43px;
+}
+
+.nec_nav_right .nec_nav_pgods a{
+	color: #606060;
+}
+
+/*picpsa*/
+.picpasbox{
+	width: 100%;
+	height:450px;
+	background: url(../../img/bg-picpa.png)center ;	
+	background-size: 1839px 450px;
+	position: relative; 
+}
+
+.picpasbox .picBo{
+	width: 800px;
+	height: 450px;
+	overflow: hidden;
+	margin-left: 236px;
+	position:relative;
+}
+
+.picBo #btns{
+	position:absolute;
+	right:260px;
+	bottom:10px;	
+	height:40px;
+
+}
+.picBo #btns li{
+	float:left;
+	margin-left:10px;
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	background-color:white;
+}
+
+
+.picBo #imgId{
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.picBo #imgId:hover{
+	cursor: pointer;
+}
+
+.picpasbox .contLeft{
+	width: 210px;
+	height: 450px;
+	background: #3ea600;
+	margin-left: 26px;
+	float: left;
+}
+
+.contLeft ol li{
+	width: 210px;
+	height: 32px;
+	font-size: 14px;
+	line-height: 32px;
+	margin-top: 8px;
+	
+}
+.contLeft ol li img{
+	margin-left:20px;
+	margin-bottom: 7px; 
+
+}
+.contLeft ol li a{
+	color: #ffffff;
+	padding-right: 10px;	
+}
+
+.picpasbox .contRight{
+	width: 190px;
+	height: 448px;
+	border: 1px solid #dddddd;
+	border-right: transparent;	
+	position: absolute;
+	right:  53px;
+	top: 0px;
+	background: white;
+}
+
+.contRight #contRight_xuanxiang{
+	width: 190px;
+	height: 115px;
+	
+}
+#contRight_xuanxiang ul{
+	
+	height: 30px;
+	width: 190px;
+}
+#contRight_xuanxiang_head ul li{
+	font-size: 12px;
+	text-align: center;
+	line-height: 30px;
+	height: 30px;
+	float: left;
+	width: 63px;
+	
+}
+#contRight_xuanxiang_body{
+	width: 165px;
+	height: 72px;
+	margin-top: 13px;
+	margin-left: 25px;
+}
+
+#contRight_xuanxiang_body_one {
+	display: block;
+
+} 
+#contRight_xuanxiang_body_two{
+	display: none;
+}
+
+#contRight_xuanxiang_body_three{
+	display: none;
+}
+
+#contRight_xuanxiang_body ul li{
+	font-size: 12px;
+	color: #606060;
+	line-height: 20px;
+
+}
+#contRight_xuanxiang_body ul li a{
+	color: #606060;
+}
+#contRight_table table{
+	border-collapse: collapse;
+	border:1px solid #dddddd;
+}
+#contRight_table table td {
+	border: 1px dashed #dddddd;
+	
+}
+
+/*goods1*/
+
+.goodsBoxOne{
+ width: 1225px;
+ margin: 0 auto;
+}
+.fontOne img{
+	float: left;
+	margin: 20px 0 0 20px;
+
+}
+.fontOne{
+	height: 46px;
+	width: 100%;
+	border-bottom: 2px solid #4bae00;
+}  
+.fontOne h2{
+	float: left;
+	font-size: 20px;
+	line-height: 46px;
+}
+
+.goodsBoxOne .goodsOne{
+	height: 320px;
+}
+
+.goodsOne ul li{
+	width: 238px;
+	height: 320px;
+	border-right: 5px solid #ededed;
+	float: left;
+}
+#goodsOne_picBox{
+	width: 238px;
+	height: 220px;
+}
+
+#goodsOne_cont{
+	width: 204px;
+	height: 95px;
+	background: #f1f7f4;
+	padding: 5px 16px 0 18px;	 
+}
+
+.goodsOne ul li img{
+	width: 200px;
+	height: 200px;
+	margin: 15px 15px 0 15px;
+}
+
+#goodsOne_cont .guoren{
+	font-size: 16px;
+	color: #383838;
+	line-height: 30px;
+	
+}
+
+#goodsOne_cont .ziranyuanxiang{
+	font-size: 14px;
+	color: #606060;
+}
+
+#goodsOne_cont p{
+	font-size: 12px;
+	margin-top: 10px;
+}
+#goodsOne_cont p span{
+	font-size: 14px;
+	color: #de0801;
+	line-height: 22px;
+}
+
+#goodsOne_cont p a{
+	display: block;
+	width: 80px;
+	height: 25px;
+	background: #ff870f;
+	color: #ffffff;
+	text-align: center;
+	line-height: 25px;
+	border-radius: 4px;
+	float: right;
+}
+
+ /*goods2*/
+
+.goodsBoxTwo{
+ width: 1225px;
+ margin: 0 auto;
+}
+.goodsBoxTwo .goodsTwo{
+	height: 420px;
+}
+.goodsBoxTwo a{
+	float: left;
+}
+
+/*goods3*/
+.goodsBoxThr{
+	width: 1225px;
+ margin: 0 auto;
+
+}
+.goodsBoxThr a{
+	float: left;
+}
+ 
+.goodsBoxThr .goodsThr1{
+	width: 1250px;
+	margin-bottom: 30px;
+	height: 320px;
+}
+
+.goodsBoxThr .goodsThr2{
+	height: 110px;
+	margin-bottom: 15px;
+}
+
+/*forginFoods*/
+.forginFoods{
+	width: 1225px;
+	margin: 0 auto;
+}
+
+.forginFoods .forginFoods_nav{
+		width: 1225px;
+		height: 38px;
+		border-bottom: 1px solid #a1c0f6;
+		
+}
+
+.forginFoods_nav i{
+	margin-top: 8px;
+	width: 5px;
+	height: 20px;
+	background: #88a9e2;
+	float: left;
+}
+.forginFoods_nav h2{
+	float: left;
+	line-height: 38px;
+	margin-left: 10px;
+	color: #88a9e2;
+	margin-right: 180px;
+	font-size: 20px;
+}
+
+.forginFoods_nav h3{
+	float: left;
+	width: 74px;
+	height: 36px;
+	line-height: 36px;
+	font-size: 16px;
+	color: #434343;
+	margin-right: 35px;
+	text-align: center;
+
+}
+.forginFoods_nav h3:nth-child(3){
+	border-bottom: 2px solid #a1c0f6;
+}
+
+.forginFoods_left{
+	width: 242px;
+	height: 504px;
+	
+	
+}
+.forginFoods_left_nav{
+	width: 242px;
+	height: 169px;
+	background: #a1c0f6;
+}
+.forginFoods_left_nav_bg{
+	width: 64px;
+	height: 64px;
+	background: url(../../img/floor_icon.png)no-repeat;
+	font-size: 20px;
+	color: #ffffff;
+	font-weight: 700;
+}
+.forginFoods_left_nav_bg p{
+	 padding-top: 5px;
+    margin-left: 10px;
+	cursor: pointer;
+}
+
+.forginFoods_left_nav ul{
+	width: 200px;
+	height: 118px;
+	
+	margin: -20px 20px;
+}
+.forginFoods_left_nav ul li{
+	font-size: 12px;
+	line-height: 34px;
+
+}
+
+.forginFoods_left_nav ul li a{
+	color: #5e7090;
+	margin-right: 18px;
+}
+.forginFoods_left_nav ul li img{
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+.forginFoods_left_nav .forginFoods_left_nav_ulbt{
+	margin: 0 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
