@@ -42,6 +42,7 @@ img{
 	font-size: 12px;
 	opacity: 1;
 	z-index: 150;
+
 }
 .provinceCity p span{
 	color: #000;
@@ -142,6 +143,88 @@ img{
     top: 816px;
     display: none;
 
+}
+
+#fix-top{
+	width: 100%;
+	height: 92px;
+	background: white;
+	z-index: 12;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+#fix-top img{
+	float: left;
+	margin-left: 20px;
+}
+#fix-top #input_mirr{
+	float: right;
+	margin-top: 25px;
+}
+#fix-top #input_mirr .bigmirr{
+	width: 32px;
+	float: left;
+	height: 38px;
+	border: 2px solid #c30000;
+	border-right: transparent;
+	background: url(../../img/bg1.png)no-repeat -60px -15px;
+}
+
+#input_mirr #nec_serch_tex{
+	width: 450px;
+	height: 38px;
+	border-style: none;
+	border-top: 2px solid #c30000;
+	border-bottom: 2px solid #c30000;
+	   
+}
+#input_mirr .nec_serch_sousuo{
+		display: block;
+	width: 100px;
+	height: 42px;
+	float: right;
+	background:#c30000; 
+	color: #ffffff;
+	line-height: 42px;
+	text-align: center;
+	 margin-right: 360px;
+}
+
+
+
+.fix_left{
+	width: 75px;
+	height: 200px;
+	position: fixed;
+	top: 140px;
+    z-index: 10;
+    left: -30px;
+    background: white;
+    display: none;
+}
+.fix_left ul li{
+	width: 75px;
+	height: 39px;
+	border-bottom: 1px solid #ededed;
+	font-size: 12px;
+	text-align: center;
+	line-height: 39px;
+	
+}
+
+.fix_left ul li a{
+	color: #606060;
+}
+
+.fix_left ul li:nth-child(1){
+	background: #3ea600;
+	border-radius: 0px!important;
+}
+.fix_left ul li:hover{
+	border-radius: 5px;
+	background: #3ea600;
 }
 
 
@@ -546,9 +629,9 @@ img{
 	height: 32px;
 	font-size: 14px;
 	line-height: 32px;
-	margin-top: 8px;
-	
+	margin-top: 8px;	
 }
+
 .contLeft ol li img{
 	margin-left:20px;
 	margin-bottom: 7px; 
@@ -560,15 +643,13 @@ img{
 }
 
 .contLeft ol li:hover{
-	
-	background: white;
+		background: white;
 	
 }
 
 .contLeft ol li:hover a{
 	text-decoration:underline;
-	color: #3ea600;
-	
+	color: #3ea600;	
 }
 
 
@@ -640,6 +721,41 @@ img{
 	
 }
 
+
+.contLeft_ol_zhezhao{
+	position: absolute;
+	left: 236px;
+	top: 0;
+	width: 780px;
+	height: 450px;
+	z-index: 100;
+	background: white;
+	display: none;
+	 padding: 30px 40px 20px 40px;
+}
+.contLeft_ol_zhezhao p{
+	font-size: 12px;
+	color: #333;
+	border-bottom: 1px solid #ccc;
+}
+.contLeft_ol_zhezhao p a:nth-child(1){
+	color: black;
+	font-weight: 700;
+}
+.contLeft_ol_zhezhao p a{
+	color: #333!important;
+	text-decoration: none!important;
+}
+.contLeft_ol_zhezhao p a:hover{
+	color: #3ea600!important;
+	text-decoration: underline!important;
+}
+.contLeft ol li:hover .contLeft_ol_zhezhao{
+	display: block;
+}
+
+
+
 /*goods1*/
 
 .goodsBoxOne{
@@ -675,6 +791,7 @@ img{
 #goodsOne_picBox{
 	width: 238px;
 	height: 220px;
+	overflow: hidden;
 }
 
 #goodsOne_cont{
@@ -689,6 +806,13 @@ img{
 	height: 200px;
 	margin: 15px 15px 0 15px;
 }
+.goodsOne ul li img:hover{
+	transform: scale(1.2);
+	transition: all 1s;
+}
+
+
+
 
 #goodsOne_cont .guoren{
 	font-size: 16px;
@@ -723,6 +847,10 @@ img{
 	border-radius: 4px;
 	float: right;
 }
+#goodsOne_cont p a:hover{
+	text-decoration: underline;
+}
+
 
  /*goods2*/
 
@@ -741,11 +869,17 @@ img{
 .goodsBoxThr{
 	width: 1225px;
  margin: 0 auto;
+overflow: hidden;
 
 }
 .goodsBoxThr a{
 	float: left;
 }
+.goodsBoxThr a:hover{
+	transform: translateX(-10px);
+	transition: all 1s;
+}
+
  
 .goodsBoxThr .goodsThr1{
 	width: 1250px;
@@ -799,7 +933,19 @@ img{
 	text-align: center;
 
 }
-.forginFoods_nav h3:nth-child(3){
+.forginFoods_left_nav ul li a:hover{
+	text-decoration: underline;
+	color: black;
+}
+
+.forginFoods_right_one_topboxone img:hover{
+	transform: translateX(10px);
+	transition: all 1s;
+}
+
+
+
+.forginFoods_nav .forginFoods_nav_jingxuan{
 	border-bottom: 2px solid #a1c0f6;
 }
 
@@ -896,6 +1042,35 @@ img{
 	border-bottom: 1px solid #ededed;
 	border-right: 1px solid #ededed;
 }
+
+/*食物遮罩层*/
+
+#forginFoods_right_zhezhao{
+	width: 968px;
+	height: 504px;
+	position: absolute;
+	display: none;
+	z-index: 100;
+	background: white;
+
+}
+
+#forginFoods_right_zhezhao2{
+	width: 968px;
+	height: 504px;
+	position: absolute;
+	display: none;
+	z-index: 100;
+	background: white;
+
+}
+
+
+
+
+
+
+
 
 
 /*kindsnav*/
@@ -1049,6 +1224,42 @@ img{
 	color: #989898;
 
 }
+
+
+/*各种效果*/
+
+#goodsOne_cont .guoren:hover{
+	color: #3ea600;
+	text-decoration: underline;
+}
+
+#goodsOne_cont .ziranyuanxiang:hover{
+	color: #3ea600;
+	text-decoration: underline;
+}
+.forginFoods_right_one_topboxone p a:hover{
+	color: #3ea600;
+	text-decoration: underline;
+}
+.tablebox a:hover{
+	color: #3ea600;
+	text-decoration: underline;
+}
+
+.footer-top ul li a:hover{
+	color: #3ea600;
+	text-decoration: underline;
+}
+
+.footer-top h2 a:hover{
+	color: #3ea600;
+	text-decoration: underline;
+}
+
+.footer-bottom_nav a:hover{
+	text-decoration: underline;
+}
+
 
 
 
