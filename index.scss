@@ -528,6 +528,7 @@ img{
 .forginFoods{
 	width: 1225px;
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 .forginFoods .forginFoods_nav{
@@ -571,6 +572,7 @@ img{
 .forginFoods_left{
 	width: 242px;
 	height: 504px;
+	float: left;
 	
 	
 }
@@ -617,6 +619,108 @@ img{
 .forginFoods_left_nav .forginFoods_left_nav_ulbt{
 	margin: 0 20px;
 }
+
+.forginFoods_right_one_topboxone{
+	width: 241px;
+	height: 251px;
+	border-bottom: 1px solid #ededed;
+	border-right: 1px solid #ededed;
+}
+.forginFoods_right{
+	float: left;
+}
+.forginFoods_right_one_topboxone img{
+	width: 180px;
+	height: 180px;
+	margin: 6px 30px 5px 30px; 
+}
+
+.forginFoods_right_one_topboxone p{
+	font-size: 14px;
+	line-height: 32px;
+	margin-left: 20px;
+}
+
+.forginFoods_right_one_topboxone p a{
+	color: #606060;
+}
+.forginFoods_right_one_topboxone h2{
+	color: #dd0800;
+	font-size: 18px;
+	margin-left: 20px;
+}
+
+.forginFoods_right_one_topboxone{
+	float: left;
+
+}
+
+.forginFoods_right_one_topboxpicp{
+	width: 483px;
+	height: 251px;
+	float: left;
+	border-bottom: 1px solid #ededed;
+	border-right: 1px solid #ededed;
+}
+
+ .tablebox {
+ 	width: 1215px;
+ 	margin: 0 auto;
+ 	height: 730px;
+ 	border-top: 2px solid #3ea600;
+ 	margin-top: 44px;
+ 	
+ }  
+
+.tablebox table{
+	border: 1px solid #ededed;
+	border-collapse: collapse;
+}
+
+
+.tablebox table td{
+	width: 240px;
+	height: 363px;
+	border: 1px solid #ededed;
+
+}
+.tablebox table td h2{
+	
+	font-size: 18px;
+	
+	text-align: center;
+
+}
+.tablebox table td h2 a{
+	color: #606060;
+}
+.tablebox table td .ul_left{
+	float: left;
+	margin-left: 33px;
+}
+.tablebox table td .ul-right{
+	float: right;
+	margin-right: 30px;
+
+}
+.tablebox table td ul li{
+	font-size: 12px;
+	margin-top: 13px;
+}
+.tablebox table td a img{
+	margin-top: 30px;
+	margin-left: 72px;
+} 
+
+.tablebox table td ul li a{
+	color: #606060;
+	
+}
+
+
+
+
+
 
 
 
