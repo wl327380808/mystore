@@ -7,6 +7,11 @@ a{
 	text-decoration: none;
 }
 
+html a:hover{
+	color: #0d8700;
+}
+
+
 ul,ol{
 	list-style: none;
 }
@@ -14,6 +19,134 @@ ul,ol{
 img{
 	vertical-align: bottom;
 }
+
+.zhezhaoce{
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: 0.5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	display: none;
+}
+
+
+ .provinceCity{
+	display: none;
+	background: white;
+	left: 121px;
+	top: 131px;	
+	position: absolute;
+	font-size: 12px;
+	opacity: 1;
+	z-index: 150;
+}
+.provinceCity p span{
+	color: #000;
+	font-weight: 700;	
+}
+.provinceCity p{
+	line-height: 25px;
+}
+ .provinceCity a{
+	color:#606060;
+	margin-right: 20px;
+}
+
+ .provinceCity_top{
+	width: 308px;
+	padding: 0 15px 15px 10px;
+	
+	border: 1px solid #3a9900;
+}
+.provinceCity_top .qingxuanze{
+	width: 100px;
+	height: 25px;
+	border: 1px solid #3a9900; 
+	text-align: center;
+	line-height: 25px;
+	position: relative;
+}
+
+.provinceCity_top ul li{
+	line-height: 25px;
+}
+.qingxuanze .sanjiao{
+	width: 0;
+	height: 0;
+	 border: 5px solid transparent;
+   float: right;
+    border-top-color: #ccc;
+     left: 70px;
+    top: 10px;
+    position: absolute;
+}
+
+.provinceCity_bottom{
+	height: 190px;
+	width: 280px;
+	background: #f5f5f5;
+}
+
+
+
+
+
+.mycllect,.myzhanghu,.zaxianchongzhi,.dingbu{
+	   width: 70px;
+	height: 34px;
+	background: #3da700; 
+	text-align: center;
+    line-height: 34px;
+    color: white;
+    font-size: 14px;
+}
+.mycllect{
+	position: fixed;
+	right: 34px;
+    top: 680px;
+    display: none;
+   
+}
+.myzhanghu{
+	position: fixed;
+	right: 34px;
+    top: 714px;	
+    display: none;
+
+}
+.zaxianchongzhi{
+	position: fixed;
+	right: 34px;
+    top: 748px;	
+    display: none;
+
+}
+
+.erweima{
+	position: fixed;
+	right: 34px;
+    top: 548px;	
+    background: url(../../img/ewmbg-2.png)no-repeat  0px 0px;
+	width: 154px;
+	height: 272px;
+	display: none;
+
+}
+
+.dingbu{
+	position: fixed;
+	right: 34px;
+    top: 816px;
+    display: none;
+
+}
+
+
+
+
 
 #fixedBox{
 	width: 34px;
@@ -25,6 +158,89 @@ img{
 	z-index: 1000;
 }
 
+#fixedBox a{
+	display: block;
+	width: 34px;
+	height: 34px;
+	
+}
+#fixedBox a:hover{
+	background: #3da700
+}
+
+#fixedBox a:nth-child(1){
+	width: 34px;
+	height: 108px;
+	margin-top: 215px;
+	margin-bottom: 357px;
+	font-size: 14px;
+	color: #ffffff;
+	text-align: center;
+}
+
+#fixedBox a:nth-child(1) .cont_a_1{
+	width: 14px;
+	height: 16px;
+	background: #3da700;
+	color: #ffdc49;
+	line-height: 16px;
+	text-align: center;
+	border-radius: 3px;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+#fixedBox a:nth-child(2){
+	background: url(../../img/rightcart.jpg)no-repeat  0px 0px;
+}
+#fixedBox a:nth-child(2):hover{
+	background: url(../../img/rightcart.jpg)no-repeat  0px -34px;
+}
+
+#fixedBox a:nth-child(2):hover .mycllect{
+	display: block;
+}
+
+
+#fixedBox a:nth-child(3):hover{
+	background: url(../../img/rightcart.jpg)no-repeat  -34px -34px;
+}
+#fixedBox a:nth-child(3):hover .myzhanghu{
+	display: block;
+}
+#fixedBox a:nth-child(4):hover{
+	background: url(../../img/rightcart.jpg)no-repeat  -68px -34px;
+}
+#fixedBox a:nth-child(4):hover .zaxianchongzhi{
+	display: block;
+}
+#fixedBox a:nth-child(5):hover{
+	background: url(../../img/rightcart.jpg)no-repeat  -102px -34px;
+}
+#fixedBox a:nth-child(5):hover .erweima{
+	display: block;
+}
+#fixedBox a:nth-child(6):hover{
+	background: url(../../img/rightcart.jpg)no-repeat  -136px -34px;
+}
+
+#fixedBox a:nth-child(6):hover .dingbu{
+	display: block;
+}
+#fixedBox a:nth-child(3){
+	background: url(../../img/rightcart.jpg)no-repeat -34px 0px;
+}
+
+#fixedBox a:nth-child(4){
+	background: url(../../img/rightcart.jpg)no-repeat -68px 0px;
+}
+#fixedBox a:nth-child(5){
+	background: url(../../img/rightcart.jpg)no-repeat -102px 0px;
+}
+
+#fixedBox a:nth-child(6){
+	background: url(../../img/rightcart.jpg)no-repeat -136px 0px;
+}
 
 
 .header{
@@ -50,7 +266,11 @@ img{
 	color: #606060;
 	
 } 
-
+.header_nav #beijingId{
+	  width: 40px;
+    text-align: center;
+		 background: white;
+}
 .header_nav a{
 	color: #606060;
 }
@@ -83,14 +303,14 @@ img{
 	display: block;
 	width: 50px;
 	height: 20px;
-	background: url(../../img/bg1.png)no-repeat 3px 4px;
+	background: url(../../img/bg1.png)no-repeat 2px 4px;
 }
 .header_nav .header_bg3{
 	float: right;
 	display: block;
 	width: 50px;
 	height: 20px;
-	background: url(../../img/bg2.png)no-repeat -86px -78px;
+	background: url(../../img/bg2.png)no-repeat -90px -78px;
 	
 }
 .header_nav .mycount{
@@ -338,6 +558,20 @@ img{
 	color: #ffffff;
 	padding-right: 10px;	
 }
+
+.contLeft ol li:hover{
+	
+	background: white;
+	
+}
+
+.contLeft ol li:hover a{
+	text-decoration:underline;
+	color: #3ea600;
+	
+}
+
+
 
 .picpasbox .contRight{
 	width: 190px;
@@ -663,12 +897,17 @@ img{
 	border-right: 1px solid #ededed;
 }
 
+
+/*kindsnav*/
+
+
  .tablebox {
  	width: 1215px;
  	margin: 0 auto;
  	height: 730px;
  	border-top: 2px solid #3ea600;
  	margin-top: 44px;
+ 	margin-bottom: 45px;
  	
  }  
 
@@ -718,12 +957,98 @@ img{
 }
 
 
+/*footer-top*/
 
 
+.footer-top{
+	width: 100%;
+	height:251px;
+	border-top: 2px solid #e7e7e7;
+	background: #f7f7f7; 
+}
+
+.footer-top .partOne{
+	width: 241px;
+	text-align: center;
+	position: relative;
+	float: left;
+	
+}
+.footer-top .partOne h2{
+	font-size: 18px;
+	margin-top: 50px;
+	
+}
+
+.footer-top .partOne h2 a{
+	color: #606060;
+}
+.footer-top .footer-top_bg{
+	width: 1px;
+	height: 78px;
+	background: #e9e9e9;
+	float: right;
+	position: absolute;
+	top: 60px;
+	right: 0px;
+
+}
+
+.footer-top .partOne ul li{
+	font-size: 12px;
+	margin-top: 10px;
+}
+
+.footer-top .partOne ul li a{
+	color: #989898;
+}
 
 
+.footer-top .partTwo h2{
+	font-size: 16px;
+	color: #c60001;
+	margin-top: 45px;
+	margin-bottom: 18px;
+}
+.partTwo .partTwo_app{
+	float: left;
+	margin-left: 50px;
+}
 
+.partTwo .partTwo_weixin{
+	float: right;
+}
 
+/*footer-bottom*/
+.footer-bottom{
+	width: 100%;
+	height: 204px;
+	border-top: 2px solid #3ea600;
+	text-align: center;
+}
+
+.footer-bottom .footer-bottom_nav{
+	margin-top: 27px;
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+.footer-bottom .footer-bottom_nav a{
+	color: #606060;
+}
+.footer-bottom .footer-bottom_nav span{
+	color: #c198c1;
+	margin-left: 20px;
+	margin-right: 18px;
+}
+.footer-bottom .footer-bottom_cont{
+	margin-left: 230px;
+}
+
+.footer-bottom_cont .contOen_p{
+	font-size: 12px;
+	color: #989898;
+
+}
 
 
 
