@@ -277,11 +277,62 @@ img{
 }
 
 .nav_pic_mid{
+	width: 100%;
+	margin: 0 auto;
+	height:100%;
+	background: #c0e1da;	
+}
+.nav_pic_mid img{
 	width: 1000px;
 	margin: 0 auto;
-	height: 155px;
-	background: url(../../img/2bg3.jpg);
+	display: block;
 }
+
+.picBoxone{
+	width: 1000px;
+	margin: 0 auto;
+	font-size: 16px;
+	height: 100%;
+	overflow: hidden;
+}
+
+.picBoxone a{
+	display: block;
+	width: 195px;
+	height: 352px;
+	background: white;
+	float: left;
+	border: 1px solid black;
+
+}
+
+.picBoxone img{
+	width: 150px;
+	height: 150px;
+	display: block;
+}
+.picBoxone p{
+	color: #FF0000;
+}
+.picBoxone p span{
+	font-size: 35px;
+	color: #FF0000;
+	font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
