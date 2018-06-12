@@ -3,11 +3,208 @@
 <head>
 	<meta charset="UTF-8">
 	<title>goods</title>
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css">
+	<link rel="stylesheet" href="css/goods.css">
 </head>
 <body>
-	<div>dsgfdgfd</div>
+ <!-- header	 -->
+<div id="header">
+	<div id="header_cont">
+			<i  class="iconfont fangzi1 icon-fangwuxinxi"></i><p class="city">当前城市：</p>
+			<a id="beijingId" href="#">北京</a><span class="header_bg1"></span>
+			 <h4 class="hi">hi,欢迎来到我买网</h4>
+			<a class="login" href="#">登录</a>
+			<a href="#">注册</a>
+		
+			<a class="mycount" href="#">我的账户</a> 
+			<span class="header_bg1"></span>
+			<span class="header_shoping"></span>
+			<a href="#">购物车0件</a><span class="header_line">|</span>
+			<a href="#">客户服务</a><span class="header_bg1"></span><span class="header_line">|</span>
+			<a href="#">企业购</a><span class="header_line">|</span>
+			<span class="header_bg2"></span>
+			<span class="header_bg3"></span>
+	</div>
+</div>
+  <!-- sousuo -->
+<div id="nec">
+	<div id="search">
+		<a href=""><img src="../img/2.png" alt=""></a>
+		<a href=""><img src="../img/2.jpg" alt=""></a>
+			<div style="float: left;width: 401px;    margin-left: 45px; margin-top: 12px;">
+			<div class="bigmirr"></div>
+			<input id="nec_serch_tex1" class="nec_serch_tex" type="text">
+			<a class="nec_serch_gaoji" href="#">高级搜索</a>
+			<a class="nec_serch_sousuo" href="#">搜索</a>
+				<div class="nec_serch_bottom">
+				<a href="#">小龙虾</a>
+				<a href="#">牛奶</a>
+				<a href="#">啤酒</a>
+				<a href="#">每日坚果</a>
+				<a href="#">虾</a>
+				<a href="#">冰淇淋</a>
+				</div>
+			</div>
+			<img class="nec_bg3" src="../img/3.jpg" alt="">
+	</div>
+	<div id="nav">
+		<p class="nec_nav_allgoods">全部商品分类</p>
+		<div class="nec_nav_left">
+			<a href="#">团购</a>
+			<a href="#">每日鲜</a>
+			<a href="#">我买酒</a>
+			<a href="#">我买严选</a>
+			<a href="#">安心享</a>
+			<a href="#">包邮团购</a>
+			<a href="#">全球购</a>
+			<a href="#">三通专区</a>
+		</div>
+		<div class="nec_nav_right">
+			<div class="nec_nav_gouwuche">
+				<i class="iconfont goodscar icon-gouwuche"></i>
+				<i class="iconfont masage icon-xinxihuihuaxiaoxi"></i>
+				<span class="nec_span_gouwuche">0</span>
+			</div>
+			<p class="nec_nav_pgods"><a href="#">购物车</a></p>
+			<i class="iconfont nec_nav_right_jiantou icon-jiantou"></i>			
+		</div>
+	</div>
+</div>
+<!-- goodname -->
+<div class="goodsBox">
+	<a href="#">【中粮海外直采】高尾制面牌精选乌冬面270g（日本进口 袋）</a>
+</div>
+<div id="goodsPic">
+<div id="bigMirr">
+	<div style="float: left;">
+		<div id="smallBox">		
+		<div id="mirrorBox">
+		</div>
+	</div>
+	<div id="bigBox">		
+	</div>
+	<div id="imgsBox">
+		<div class="bg-jiangtouleft"></div>
+		<ul>
+	<div class="bg-jiangtouright"></div>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		<div id="contBox"></div>	
+		</ul>
+		
+	</div>
+</div>
+	<div id="contRight">
+		<h2>【中粮海外直采】高尾制面牌精选乌冬面270g（日本进口 袋）</h2>
+		<div id="part1">
+			<p>抢购价</p>
+			<span>￥3.00</span>
+		</div>
+		<div id="part2">				
+			送至：
+				<p>
+					<span>北京海淀区海淀区5环内</span>
+					<span id="jiantou"></span>
+				</p> 
+				现在至明日0:00前完成下单预计明日 (06月13日) 送达
+		</div>
+		<div id="part3">
+				服务：
+				由我买网发货并提供售后服务。
+		</div>
+		<div id="part4">
+			<a id="daohuotongzhi" href="#"></a>
+			<div id="hongxin"></div><a href="#">收藏宝贝</a>
+			<a href="#">配送运费信息</a>
+			<a href="#">退换货规则</a>
+		</div>
+		<div id="part5">
+			<p>组合套餐明细：</p>
+			<div id="part5_smallbox">
+				<img src="../img/fangdajing2.jpg" alt="">
+				<a href="#">【中粮海外直采】高尾制面牌精选乌冬面270g（日本进口 袋）/</a>
+				<span>× 1</span>
+			</div>
+		</div>
+	
+	</div>		
 
 
-	<div>dsfdfsfds</div>
+</div>
+	
+</div>
+
+
+
+ 
+
+
+
 </body>
 </html>
+
+
+
+<script type="text/javascript">
+
+function $(id){
+	return document.getElementById(id);
+}
+
+function getStyle(domObj,attr){
+	if(domObj.currentStyle){
+		return domObj.currentStyle[attr];
+	}else{
+		return window.getComputedStyle(domObj)[attr];
+	}
+}
+
+window.onload = function(){	
+	let lis = $("imgsBox").children[1].children;
+	for(let i=1;i<lis.length-1;i++){
+		lis[i].onmouseover = function(){
+			$("smallBox").style.backgroundImage = getStyle(this,"backgroundImage");
+			$("bigBox").style.backgroundImage = getStyle(this,"backgroundImage");
+		}
+	}
+
+	$("smallBox").onmouseover = function(){
+		$("bigBox").style.display="block";
+		$("mirrorBox").style.display="block";
+	}
+	
+	$("smallBox").onmouseout = function(){
+		$("bigBox").style.display="none";
+		$("mirrorBox").style.display="none";
+	}
+	
+	$("smallBox").onmousemove = function(event){
+		let evt = event || window.event;
+		//1、数据
+		let left1 = evt.pageX-$("smallBox").offsetLeft-$("mirrorBox").offsetWidth/2;//相对于事件源
+		let top1 =  evt.pageY-$("smallBox").offsetTop-$("mirrorBox").offsetHeight/2;//相对于事件源
+		
+		if(left1<0){
+			left1=0;
+		}else if(left1>(350-$("mirrorBox").offsetWidth)){
+			left1 = 350-$("mirrorBox").offsetWidth;
+		}
+		
+		if(top1<0){
+			top1=0;
+		}else if(top1>(350-$("mirrorBox").offsetHeight)){
+			top1 = 350-$("mirrorBox").offsetHeight;
+		}
+		
+		//2、外观
+		$("mirrorBox").style.left = left1+"px";
+		$("mirrorBox").style.top = top1+"px";
+		$("bigBox").style.backgroundPosition = (-3*left1)+"px "+(-3*top1)+"px";
+	}
+}
+
+
+</script>
