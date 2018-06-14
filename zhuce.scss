@@ -65,7 +65,7 @@ ul, ol {
 	height: 35px;
 	margin-bottom: 20px;
 }
-#phonePas input{
+#phonePas #phoyanzheng{
 	width: 155px;
 	height: 35px;
 	margin-right: 20px;
@@ -173,8 +173,47 @@ ul, ol {
 }
 
 
+#userming{
+	width: 182px;
+	height: 20px;
+	font-size: 12px;
+	background: #fee6e7;
+	border: 1px #faa2a6 solid;
+	color: #ff8080;
+	position: absolute;
+	top: 38px;
+	z-index: 100;
+	padding: 0px 20px 0px 16px;
+	display: none;
+}
 
+#mypass{
+		width: 182px;
+	height: 20px;
+	font-size: 12px;
+	background: #fee6e7;
+	border: 1px #faa2a6 solid;
+	color: #ff8080;
+	position: absolute;
+	top: 97px;
+	z-index: 100;
+	padding: 0px 20px 0px 16px;
+	display: none;
+}
 
+#mypassaga{
+		width: 200px;
+	height: 20px;
+	font-size: 12px;
+	background: #fee6e7;
+	border: 1px #faa2a6 solid;
+	color: #ff8080;
+	position: absolute;
+	top: 156px;
+	z-index: 100;
+	padding: 0px 20px 0px 16px;
+	display: none;
+}
 
 
 

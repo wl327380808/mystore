@@ -17,12 +17,15 @@
 	<div id="inpuT">
 	<form action="">
 		<div id="shoujiyouxiang">请输入正确的邮箱或手机<div id="shoujijiantou"><img src="../img/jiantou1.png" alt=""></div></div>
-		<input id="mailorPhone" type="text" value="邮箱/手机">
-		<input id="username" type="text" value="用户名">
-		<input id="userpass" type="password" value="设置密码">
-		<input id="passagin" type="password" value="确认密码">
-		<div id="yanzhengma" id="phonePas"><input type="text" value="手机验证码"> <a href="#">发送验证码</a></div>
-	<div id="readanagr"><input type="checkbox">我已阅读并同意<a href="#">《我买网网上商城服务条款》</a></div>
+		<input id="mailorPhone" type="text" placeholder="邮箱/手机" >
+		<div id="userming">请输入正确的用户名<div id="shoujijiantou"><img src="../img/jiantou1.png" alt=""></div></div>
+		<input id="myusername" type="text" placeholder="用户名">
+		<input id="userpass" type="password" placeholder="设置密码">
+		<div id="mypass">请输入正确的密码<div id="shoujijiantou"><img src="../img/jiantou1.png" alt=""></div></div>
+		<input id="passagin" type="password" placeholder="确认密码">
+		<div id="mypassaga">两次输入的密码不一致。请从新输入<div id="shoujijiantou"><img src="../img/jiantou1.png" alt=""></div></div>
+		<div  id="phonePas"><input id="phoyanzheng" type="text" placeholder="手机验证码" > <a href="#">发送验证码</a></div>
+	<div id="readanagr"><input type="checkbox" checked="checked">我已阅读并同意<a href="#">《我买网网上商城服务条款》</a></div>
 	    <a id="lijizhuce" href="#">立即注册</a>
 	    <a id="yaoqingma" href="#">我有邀请码></a>
 	</form>
@@ -48,6 +51,7 @@
 function checkAll(type,value){
 	var reg = null;
 	switch(type){
+		case "password":reg = /^\w{8,16}$/;break;
 		case "username":reg = /^[a-zA-Z_]\w{5,15}$/;break;
 		case "email":reg = /^\w+@[a-zA-Z0-9]+\.(com|cn|net|top|vip)$/;break;
 		case "phoneNumber":reg = /^1[^0126]\d{9}$/;break;
@@ -63,11 +67,18 @@ function checkAll(type,value){
 }
 
 
+
+$(":input").focus(function(){
+	$(":input").css({"outline":"none"})
+})
+
+
+
 $(function(){
 
-	$("mailorPhone").blur(function(){
-		if(checkAll("email",this.value)==true){
-
+	$("#mailorPhone").blur(function(){
+		if(checkAll("email",this.value)==true||checkAll("phoneNumber",this.value)==true){
+			$("#shoujiyouxiang").css({"display":"none"})
 		}else{
 			$("#shoujiyouxiang").css({"display":"block"})
 		}
@@ -75,10 +86,31 @@ $(function(){
 
 	})
 
+	$("#myusername").blur(function(){
+		if(checkAll("username",this.value)==true){
+			$("#userming").css({"display":"none"})
+		}else{
+			$("#userming").css({"display":"block"})
+		}
 
+	})
 
+$("#userpass").blur(function(){
+		if(checkAll("password",this.value)==true){
+			$("#mypass").css({"display":"none"})
+		}else{
+			$("#mypass").css({"display":"block"})
+		}
 
-
+	})
+ 
+$("#passagin").blur(function(){
+	if($("#passagin").val()==$("#userpass").val()){
+		$("#mypassaga").css({"display":"none"})
+	}else{
+		$("#mypassaga").css({"display":"block"})
+	}
+})
 
 
 
