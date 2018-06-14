@@ -1,0 +1,212 @@
+@charset "UTF-8";
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+body a:hover{  
+  color: #0d8700; }
+
+ul, ol {
+  list-style: none; }
+
+
+#header{
+	width: 1000px;
+	height: 86px;
+	padding-top: 10px;
+	margin: 0 auto;
+	border-bottom: 3px solid #479202;
+}
+
+#content{
+	width: 1000px;
+	height: 500px;
+	
+	margin: 20px auto;
+	background: url(../../img/login3.jpg);
+}
+
+#chacha{
+	width: 23px;
+	height: 28px;
+	position: absolute;
+    top: 53px;
+    right: 37px;
+    cursor: pointer;
+    display: none;
+	background: url(../../img/login4.jpg);
+}
+#loginBox{
+	width: 382px;
+	height: 466px;
+	float: right;
+	background: #ebebeb;
+	margin-top: 20px;
+	margin-right: 20px;
+	border: 1px solid #dcdddd;
+}
+
+#loginBox_cont{
+	width: 314px;
+	height: 438px;
+	margin-left: 4px;
+	margin-top: 4px;
+	background: #f7f8f8;
+	padding: 10px 30px;
+	font-size: 12px;
+	position: relative;
+}
+#loginBox_cont h2{
+	color: #595757;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+#loginBox_cont input{
+	width: 304px;
+	height: 28px;
+}
+#loginBox_cont #wangjimima{
+	color: #aaaaaa;
+	margin-left: 225px;
+	line-height: 25px;
+
+}
+#loginBox_cont #wangjimima:hover{
+	text-decoration: underline;
+	color: #a8d326;
+}
+#dengluBox{
+	width: 306px;
+	height: 30px;
+	margin-top: 34px;
+	margin-bottom:23px; 
+}
+#dengluBox #denglu{
+	width: 209px;
+	height: 30px;
+	background: url(../../img/login2.png)0px -5px;
+	float: left;
+	text-align: center;
+	line-height: 30px;
+	
+	font-size: 18px;
+	margin-right: 15px;
+}
+#denglu{
+	color: #fff;
+}
+#dengluBox #zhuce{
+	width: 79px;
+	height: 30px;
+	background: url(../../img/login2.png)136px -149px;
+	float: left;
+	text-align: center;
+	line-height: 30px;
+	
+	font-size: 18px;
+}
+#zhuce{
+	color: #479202;
+}
+
+#hezuohuoban{
+	width: 306px;
+	height: 139px;
+	
+	border-top: 1px dashed #b5b5b6;
+}
+#hezuohuoban p{
+	color: #595757;
+	font-size: 12px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+#hezuohuoban_icon{
+	width: 306px;
+	height: 108px;
+}
+#hezuohuoban_icon li{
+	height: 20px;
+	float: left;
+	margin-top: 15px;
+}
+#hezuohuoban_icon i{
+	width: 16px;
+	height: 20px;
+	float: left;
+	margin-right: 5px;
+}
+#hezuohuoban_icon a{
+	float: left;
+	color: #807e7e;
+}
+#hezuohuoban_icon span{
+	float: left;
+	margin: 0 15px;
+	color: #dcdddd;
+}
+#hezuohuoban_icon #QQ{
+	background: url(../../img/login2.png)241px -75px;
+}
+
+#hezuohuoban_icon #renrenwang{
+	background: url(../../img/login2.png)241px -96px;
+}
+#hezuohuoban_icon #kaixinwang{
+	background: url(../../img/login2.png)241px -117px;
+}
+
+#hezuohuoban_icon #zhifubao{
+	background: url(../../img/login2.png)241px -138px;
+}
+
+#hezuohuoban_icon #xinlangweibo{
+	background: url(../../img/login2.png)241px -159px;
+}
+
+#hezuohuoban_icon #baidu{
+	background: url(../../img/login2.png)241px -180px;
+}
+#hezuohuoban_icon #jianghang{
+	background: url(../../img/login2.png)241px -201px;
+}
+#hezuohuoban_icon #zhidemai{
+	background: url(../../img/login2.png)241px -222px;
+}
+#hezuohuoban_icon #renshou{
+	background: url(../../img/login2.png)241px -241px;
+}
+
+
+
+#footer{
+	width: 100%;
+	height: 100px;
+	padding-top: 20px;
+	background: #efefef;
+	border-bottom: 28px solid #43a41b;
+}
+#footer_cont img{
+	margin-top: 10px;
+}
+#footer_cont{
+	width: 1000px;
+	height: 100px;
+	margin: 0 auto;
+	line-height: 32px;
+
+	font-size: 12px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+

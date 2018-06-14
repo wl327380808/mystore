@@ -19,6 +19,58 @@ ul,ol{
 img{
 	vertical-align: bottom;
 }
+/*myacont*/
+
+#myacont_top{
+	width: 84px;
+	height: 31px;
+	border: 1px solid #8fc71c;
+	border-bottom: 1px solid #fff;
+	z-index: 10;
+	position: absolute;
+	top: 100px;
+    left: 780px;
+    cursor: pointer;
+	display: none;
+}
+#myacont_bottom{
+	width: 180px;
+	height: 199px;
+	border: 1px solid #8fc71c;
+	position: absolute;
+	top: 132px;
+    left: 780px;
+    z-index: 1;
+	background: #fff;
+	font-size: 12px;
+	padding: 5px 0px 0px 15px;
+	display: none;
+}
+#myacont_bottom p{
+	width: 180px;
+	height: 32px;
+	line-height: 32px;
+}
+#myacont_bottom p a{
+	color: #90c71b
+}
+#myacont_bottom ul li{
+	width: 90px;
+	height: 32px;
+	float: left;
+}
+#myacont_bottom ul li a{
+	color: #898;
+}
+
+
+
+
+
+
+
+
+
 
 .zhezhaoce{
 	width: 100%;

@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>login</title>
+	<link rel="stylesheet" href="css/login.css">
+
+</head>
+<body>
+<!-- header	 -->
+<div id="header">
+	<img src="../img/login1.png" alt="">
+</div>
+<div id="content">
+	<div id="loginBox">
+		<div id="loginBox_cont">
+			<div id="chacha"></div>
+			<h2>请登录中粮我买网</h2>
+			<input id="mailorPhoneoruser" type="text" placeholder="用户名/邮箱/手机号">
+			<a id="wangjimima" href="#">忘记登录密码？</a>	
+			<input type="password" placeholder="密码">
+			<div id="dengluBox">
+				<div><a id="denglu" href="#" target="_blank">登录</a></div>
+				<div><a id="zhuce" href="zhuce.html">注册</a></div>
+			</div>
+			<div id="hezuohuoban">
+				<p>使用合作伙伴账号登录我买网</p>
+				<ul id="hezuohuoban_icon">
+					<li>
+						<i id="QQ"></i>
+						<a href="#">QQ</a>
+						<span>|</span>
+					</li>
+					<li>
+						<i id="renrenwang"></i>
+						<a href="#">人人网</a>
+						<span>|</span>
+					</li>
+					<li>
+						<i id="kaixinwang"></i>
+						<a href="#">开心网</a>
+						<span>|</span>
+					</li>
+					<li>
+						<i id="zhifubao"></i>
+						<a href="#">支付宝</a>
+						<span>|</span>
+					</li>
+					<li>
+						<i id="xinlangweibo"></i>
+						<a href="#">新浪微博</a>
+						<span>|</span>
+					</li>
+					<li>
+						<i id="baidu"></i>
+						<a href="#">百度</a>
+						<span>|</span>
+					</li>
+					<li>
+						<i id="jianghang"></i>
+						<a href="#">建行</a>
+						<span>|</span>
+					</li>
+					<li>
+						<i id="zhidemai"></i>
+						<a href="#">什么值得买</a>
+						<span>|</span>
+					</li>
+					<li>
+						<i id="renshou"></i>
+						<a href="#">中英人寿</a>
+						<span>|</span>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+ 
+
+<div id="footer">
+	<div id="footer_cont">
+		Copyright©2009-2018 womai.com.hk All Rights Reserved 中粮海优（北京）有限公司版权所有<br/>
+中粮海优（北京）有限公司 北京市朝阳区朝阳门南大街8号18F-09室<br/><img src="../img/beian.png" alt="">
+
+京公网安备 11010102000458号
+京ICP备 13003995号 营业执照（统一社会信用代码）91110000055590239L 食品经营许可证（社会信用代码）05559023-9
+	</div>
+</div>
+
+</body>
+</html>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+	
+function checkAll(type,value){
+	var reg = null;
+	switch(type){
+		case "password":reg = /^\w{8,16}$/;break;
+		case "username":reg = /^[a-zA-Z_]\w{5,15}$/;break;
+		case "email":reg = /^\w+@[a-zA-Z0-9]+\.(com|cn|net|top|vip)$/;break;
+		case "phoneNumber":reg = /^1[^0126]\d{9}$/;break;
+		case "personId":reg = /^[1-9]\d{5}(19|20)\d{2}(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])\d{3}[0-9xX]$/;break;
+		default:;
+	}
+	if(reg!=null){
+		if(reg.test(value)){
+			return true;
+		}
+	}
+	return false;		
+}
+
+
+$("#mailorPhoneoruser").blur(function(){
+		if(checkAll("email",this.value)==true||checkAll("username",this.value)==true||checkAll("phoneNumber",this.value)==true){
+			$("#chacha").css({"display":"none"})
+		}else if($("#mailorPhoneoruser").val()==""){
+				$("#chacha").css({"display":"none"})
+		}
+		else{
+			$("#chacha").css({"display":"block"});
+			$("#chacha").click(function(){
+				$("#mailorPhoneoruser").val("");
+				$("#chacha").css({"display":"none"})
+			})	
+		}
+
+	})
+
+
+
+
+
+
+$(":input").focus(function(){
+	$(":input").css({
+		"outline":"none"
+	})
+})
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+

@@ -8,6 +8,26 @@
 	
 </head>
 <body>
+<!-- my accont -->
+	<div id="myacont">
+	<div id="myacont_top"></div>
+	<div id="myacont_bottom">
+		<p><a href="#">登录</a><span>您还没有登录！</span></p>
+		<ul>
+			<li><a href="#">待付款订单 </a></li>
+			<li><a href="#">我的消息 </a></li>
+			<li><a href="#">待签收订单 </a></li>
+			<li><a href="#">我的订单</a></li>
+			<li><a href="#">支付卡账户 </a></li>
+			<li><a href="#">我的积分</a></li>
+			<li><a href="#">优惠券/团购卡</a></li>
+			<li><a href="#">我的收藏</a></li>
+			<li><a href="#">电子礼品卡</a></li>
+		</ul>
+	</div>
+
+</div>
+
 
 <!-- fix-top -->
  <div id="fix-top">
@@ -88,11 +108,11 @@
 			<i  class="iconfont fangzi1 icon-fangwuxinxi"></i><p class="city">当前城市：</p>
 			<a id="beijingId" href="#">北京</a><span class="header_bg1"></span>
 			 <h4 class="hi">hi,欢迎来到我买网</h4>
-			<a class="login" href="#">登录</a>
-			<a href="#">注册</a>
+			<a class="login" href="login.html">登录</a>
+			<a href="zhuce.html">注册</a>
 		
-			<a class="mycount" href="#">我的账户</a> 
-			<span class="header_bg1"></span>
+			<a id="myCount" class="mycount" href="#">我的账户</a> 
+			<span id="" class="header_bg1"></span>
 			<span class="header_shoping"></span>
 			<a href="#">购物车0件</a><span class="header_line">|</span>
 			<a href="#">客户服务</a><span class="header_bg1"></span><span class="header_line">|</span>
@@ -1365,7 +1385,7 @@
 <script src="js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript">
 	let imgs=["../img/4.jpg","../img/5.jpg","../img/6.jpg","../img/7.jpg","../img/8.jpg","../img/9.jpg","../img/10.jpg","../img/11.jpg","../img/12.jpg",  ]
-	let hrefs =["http://www.baidu.com","http://www.baidu.com","http://www.baidu.com","http://www.baidu.com","http://www.baidu.com","http://www.baidu.com","http://www.baidu.com","http://www.baidu.com","http://www.baidu.com","http://www.baidu.com"]	
+	let hrefs =["selloption.html","selloption.html","selloption.html","selloption.html","selloption.html","selloption.html","selloption.html","selloption.html","selloption.html","selloption.html"]	
 
 
 
@@ -1504,7 +1524,24 @@ $("nec_serch_tex1").onfocus =function(){
    	   }
 
 
+
+
    }
+
+  
+  $("myCount").onmouseenter=function(){
+   	   	 $("myacont_top").style.display="block";
+   	   	 $("myacont_bottom").style.display="block";
+   	   	 $("myCount").style.color="#0d8700";
+   	   }
+
+
+ $("myacont").onmouseleave=function(){
+   	   	 $("myacont_top").style.display="none";
+   	   	 $("myacont_bottom").style.display="none";
+   	   	  $("myCount").style.color="#606060";
+   	   }
+
 
 
 
